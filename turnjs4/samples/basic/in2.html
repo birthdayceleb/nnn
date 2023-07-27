@@ -1,0 +1,168 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+<!-- <link rel="stylesheet" href="basic.css"> -->
+<style>
+	center{
+		color: #ff1ae4;
+		/* text-shadow: 0px 0px 2px white; */
+		font-size: 50px;
+		z-index: 370939;
+		font-weight: bolder;
+		font-family: 'Caveat', cursive;
+		
+		
+	}
+	.dr{
+		height: 110%;
+		position: absolute;
+		z-index: 516523;
+		width: 100%;
+		display: grid;
+		place-items: center;
+		background-color: rgba(0, 0, 0, 0.795);
+	}
+	#boo{
+		margin-top:0px;
+	}
+	.fir{
+		display: grid;
+		place-items: center;
+		border: 3px black solid;
+	
+	}
+	.co{
+		display: flex;
+		height: 95%;
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border: 3px black solid;
+	}
+	.op{
+		font-size: 40px;
+		text-transform: uppercase;
+		font-family: 'Caveat', cursive;
+		color: black;
+		border: 1px blue;
+		text-shadow: 0px 0px 10px red;
+	}
+
+</style>
+
+</head>
+<body onload="dr()">
+	<div class="dr">
+		<center></center>
+	</div>
+
+<div class="flipbook-viewport" >
+	<div class="container" id="boo">
+		<div class="flipbook">
+			<div class="im fir">
+				<div class="co">
+					<p class="op">open the book</p>
+				</div>
+				
+			</div>
+			<div class="im" style="background-image:url(img/b01.jpg)"></div>
+			<div class="im" style="background-image:url(img/b02.jpg)"></div>
+			<div class="im" style="background-image:url(img/b2.jpg)"></div>
+			<div class="im" style="background-image:url(img/b3.jpg)"></div>
+			<div class="im" style="background-image:url(img/b4.jpg)"></div>
+			<div class="im" style="background-image:url(img/b5.jpg)"></div>
+			<div class="im" style="background-image:url(img/b6.jpg)"></div>
+			<div class="im" style="background-image:url(img/b7.jpg)"></div>
+			<div class="im" style="background-image:url(img/b8.jpg)"></div>
+			<div class="im fir">
+				<div class="co">
+					<p class="op">avloothaan</p>
+				</div>
+				
+			</div>
+			<div class="im fir">
+				<div class="co">
+					<p class="op"> Naan tha sonnen la avloothaaaa </p>
+					<p class="op">😆😆😆</p>
+				</div>
+				
+			</div>
+	
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	function dr(){
+		let con="Drag the edges....";
+		let dr_co=document.querySelector('.dr');
+		let dr=document.querySelector('center');
+    var clkkk=con.split("")
+    let delay = 100; // Delay between displaying each letter in milliseconds
+        let i = 0;
+        
+        function displayNextLetter() {
+          if (i < clkkk.length) {
+            dr.innerHTML += clkkk[i];
+            i++;
+			if(i==clkkk.length){
+				dr_co.style="display:none;height:0px";
+			}
+            setTimeout(displayNextLetter, 150);
+          }
+        }
+      
+        setTimeout(displayNextLetter, delay);
+	}
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>

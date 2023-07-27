@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Drawing</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+  <script>
+    // Paste the entire content of the "drawing.js" JavaScript here
+    document.addEventListener("DOMContentLoaded", function () {
+      const canvas = document.getElementById("myCanvas");
+      
+      if (!canvas.getContext) {
+        console.error("Canvas not supported in this browser.");
+        return;
+      }
+      
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "blue";
+      ctx.fillRect(50, 50, 100, 100);
+      
+      ctx.fillStyle = "red";
+      ctx.beginPath();
+      ctx.arc(250, 150, 50, 0, 2 * Math.PI);
+      ctx.fill();
+
+      ctx.strokeStyle = "green";
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.moveTo(50, 300);
+      ctx.lineTo(350, 300);
+      ctx.stroke();
+
+      const image = new Image();
+      image.src = "img/n1.jpg";
+      image.onload = function () {
+        ctx.drawImage(image, 150, 200, 100, 100);
+      };
+    });
+  </script>
+</body>
+</html>

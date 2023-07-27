@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../turn.min.js"></script> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body onload="gl()" >
+       
+        <canvas class="confetti" id="canvas2"></canvas>  
+        
+  <header id="h">
+        <div class="jj">
+        <span class="t">
+                for_my_special_one
+        </span>
+        <span class="h_t">
+                for_my_special_one
+        </span> 
+</div>
+  </header>
+  <main>
+        <div class="fst">
+                <div id="mes">
+                        <span id="mess">
+                                
+                        </span>     
+                </div>
+                <div class="loader" > 
+                        <div class="load n1"><img src="img/spotify.png" onclick="exp(this.parentNode)" class="sp s1" alt="">
+                        <img class="spp" src="img/n1.jpg" alt="">
+                        </div>
+                        <div class="load n3"><img src="img/spotify.png" class="sp s2"  onclick="exp(this.parentNode)" alt="">
+                        <img class="spp" src="img/n2.jpg" alt="">
+                        </div>
+                        <div class="load n2"><img src="img/spotify.png" class="sp s3" onclick="exp(this.parentNode)" alt="">
+                        <img class="spp" src="img/n3.jpg" alt="">
+                        </div>
+                        <div class="load n4"><img src="img/spotify.png" class="sp s4" onclick="exp(this.parentNode)" alt="">
+                        <img class="spp"  src="img/n4.jpg" alt="">
+                        </div>
+                </div>
+        </div>
+</div>
+<div class="scnd">
+<div class="pi">
+    <div class="key">
+        <div class="white  w1 kk" onclick="nin(this)"></div>
+<div class="bl a b1 kk" onclick="nin(this)"></div>
+
+        <div class="white w2 kk" onclick="nin(this)"></div>
+<div class="bl b b2 kk" onclick="nin(this)"></div>
+
+        <div class="white  w3 kk" onclick="nin(this)"></div>
+        <div class="white  w4 kk" onclick="nin(this)"></div>
+   
+                <div class="bl c b3 kk" onclick="nin(this)"></div>
+        
+
+
+        <div class="white  w5 kk" onclick="nin(this)"></div>
+<div class="bl d b4 kk" onclick="nin(this)"></div>
+
+        <div class="white  w6 kk" onclick="nin(this)"></div>
+        <div class="bl e b5 kk book" onclick="book()"></div>
+
+        <div class="white  w7 kk" onclick="nin(this)"></div>
+    </div>
+    <div>
+        <button id="mg">CLICK THE KEYS TO SEE THE MAGIC!!!!...</button>
+    </div>
+</div>
+</div>
+<div class="thr">
+       
+        <div class="sam">
+                <div class="im_thr none">
+                        <img class="im__" src="img/photo 1.jpg"></img>
+                        <div onclick="doo(this,0)" class="co none">
+                               
+                         <p class="ques none ">?</p>
+                                
+                        </div>
+                </div>
+                <div class="im_thr none">
+                        <img class="im__" src="img/photo 2.jpg"></img>
+                        <div onclick="doo(this,1)" class="co none">
+                                <p class="ques none ">?</p>
+                                
+                        </div>
+                </div>
+                <div class="im_thr im_no none">
+                        <img class="im__" src="img/photo 3.jpg"></img>
+                        <div onclick="doo(this,2)" class="co none">
+                                <p class="ques none ">?</p>
+                                
+                        </div>
+                </div>
+                <div class="im_thr im_no none">
+                        <img class="im__" src="img/photo 4.jpg"></img>
+                        <div onclick="doo(this,3)" class="co none">
+                                <p class="ques none ">?</p>
+                                
+                        </div>
+                </div>
+                
+                
+                
+                
+                
+                
+           
+        </div>
+           <div class="butt_thr">
+                <button class="prs" onclick="prs()">PRESS>>></button>
+                <button class="nxt_thr none" onclick="nxt_thr()">NEXT</button>
+                <p class="clk ">click themm....</p>
+           </div>
+
+</div>
+
+
+<!-- //// -->
+<!-- <iframe class=" ifr " id="ifr" src="sum.html" frameborder="2"></iframe> -->
+</main>
+  <div id="pop">
+
+        <div class="content" id="pop_con">
+                <div class="pro">
+                        <div class="w11 www">
+                                <p class="beg">
+                                        THE JOURNEY HAS BEEN INCRIDIBLE FROM ITS BEGINNING>>>>
+                                </p>
+                        </div>
+                 </div>
+                
+                
+                <div class="pro">
+                        <div class="tr_con bbb">
+                        
+                                <button class="pll">Playing</button>
+                        <div class="conta_tro">
+                                <div class="img_tr">
+                                        <div class="sa"  onmouseleave="tr_()" onmouseover="trr_()">
+                                        <img src="img/n5.jpg"class="tr_n" alt="" srcset="">
+                                        <div class=" hvr_" id="hvr_">
+                                                <div class="tr_po tr_">
+                                                        <p>
+                                                                DO YOU WANNA HEAR SOME MUSIC...
+                                                        </p>
+                                                </div>
+                                        </div>
+                                        
+                                        </div>
+                        </div>
+                        <div id="myDiv">
+                                <div class="dd">
+                                <i class="fa-sharp fa-solid solid fa-circle-down" id="down" onclick="down('song/troll.mp3',1)"></i>
+                                <span id="downnn"  style="margin-top:-10px;" onclick="down('song/troll.mp3',1)">Download.</span>
+                                  </div>
+                                <div class="ic">
+                                <i class="fa-solid hrtt fa-heart " id="hrt" onclick="hrt(this)"></i>
+                                <i class="fa-solid solid fa-music"></i>
+                                <i class="fa-solid solid fa-headphones"></i>
+                                <i class="fa-solid solid fa-microphone"></i>      
+                        </div>
+                 </div>
+                <!-- < !-- table for vox --> 
+
+                <table id="vox">
+                        <tr class="tr_tr"  onclick="music_tr(this)">
+                                <td >
+                                        <div class=" play_tr">
+                                                <span>></span>
+                                               
+                                        </div>
+                                        <div class=" pause_tr  pp">
+                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                        </div>
+                                </td>
+                                <td class="mu_tr" >VOX...</td>
+                                
+                                
+                        </tr>
+                </table> 
+                
+                </div>
+
+                             
+                              
+                        <!-- 
+                
+
+
+
+                                <table id="vox">
+                                <tr class="tr_tr"  onclick="music_tr(this)">
+                                        <td >
+                                                <div class=" play_tr">
+                                                        <span>></span>
+                                                       
+                                                </div>
+                                                <div class=" pause_tr  pp">
+                                                        <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                </div>
+                                        </td>
+                                        <td class="mu_tr" >VOX...</td>
+                                        
+                                        
+                                </tr>
+                        </table> -->
+
+                        </div>
+
+                        
+               
+                 </div>
+
+                 
+                 <div class="pro">
+                        
+                        <div class="w22 www">
+                                <h2 class="hr">
+                                        பூங்குயிலின் புன்னகை
+                                </h2>
+                                <p class="kavi" >
+                                        புல்லாங்குழலில் பிறந்து வழிந்த சுவரங்களும்<br>
+                                        சுவரங்களால் சேர்த்துப் பொழிந்த ராகங்களும்<br>                
+                                        ராகங்கள் கோர்த்தப் பாடல்களும் - ரசித்துக்<br>
+                                        கேட்கும் பூங்குயில் குறள் கொண்டவள்<br>
+                                        <br>
+
+                                                               <span class="visri"> -உன் விசிறி....</span>
+                                </p>
+                        </div>
+                 </div>
+
+
+                 <div class="pro">
+                        <div class="w33 www">
+                                <div class="jj1" onclick="vid(1)">
+                                        <span class="t" style="-webkit-text-stroke: 1px white;">
+                                                coversong        
+                                        </span>
+                                        <span class="h_t" style="color: red; border-color: red; text-shadow: 0px 0px 4px white;">
+                                                coversong        
+                                        </span> 
+                                        </div>
+
+                                        <div class="jj1" onclick="vid(2)" >
+                                                <span class="t" style="-webkit-text-stroke: 1px white">
+                                                        kalakrithi
+                                                </span>
+                                                <span class="h_t"style="color: aqua; border-color: aqua; text-shadow: 0px 0px 3px white;">
+                                                        kalakrithi
+                                                </span> 
+                                                </div>
+
+                                                <div class="jj1"  onclick="vid(3)">
+                                                        <span class="t" style=" -webkit-text-stroke: 1px  white;">
+                                                               chemfluence
+                                                        </span>
+                                                        <span class="h_t" style="   text-shadow: 0px 0px 4px white;
+                                                        color: rgb(255, 0, 238); border-color: rgb(255, 0, 238)">
+                                                               chemfluence
+                                                        </span> 
+                                                 </div>
+                        </div>
+
+                 </div>
+
+                 <div class="pro">
+                        <div class="im_di_con" >
+                                
+                                <img src="img/qui.jpg" class="qui_im" alt="">
+
+                                <div class="im_di a_" onclick="ques_fl(1)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                                <div class="im_di b_" onclick="ques_fl(2)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                                <div class="im_di c_" onclick="ques_fl(3)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                                <div class="im_di d_" onclick="ques_fl(4)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                                <div class="im_di e_" onclick="ques_fl(5)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                                <div class="im_di f_" onclick="ques_fl(6)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                                <div class="im_di g_" onclick="ques_fl(7)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                                <div class="im_di h_" onclick="ques_fl(8)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                                <div class="im_di i_" onclick="ques_fl(9)">
+                                        <p class="fl_que">?</p>
+                                </div>
+                        </div>
+                 </div>
+                 
+                <div class="pro " id="pro">
+                        <div class="pw4 www">
+                                <h2 class="son">
+                                        SONGS....
+                                </h2>
+                                <table class="table" >
+                                        <tr  class="tr" onclick="music(this)">
+                                                <td>
+                                                        <div class="play">
+                                                                <span>></span>
+                                                        </div>
+                                                        <div class="pause pp">
+                                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                        </div>
+                                                </td>
+                                                <td class="mu" >music-1</td>
+                                                
+                                        </tr>
+                                        <tr  class="tr" onclick="music(this)">
+                                                <td >
+                                                        <div class="play ">
+                                                                <span>></span>
+                                                        </div>
+                                               
+                                                                <div class="pause pp">
+                                                                        <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                                </div>
+                                                </td>
+                                                <td class="mu" >music-2</td>
+                                                
+                                        </tr>
+                                        <tr  class="tr" onclick="music(this)">
+                                                <td >
+                                                        <div class="play ">
+                                                                <span>></span>
+                                                        </div>
+                
+                                                        <div class="pause pp">
+                                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                        </div>
+                                                </td>
+                                                <td class="mu" >music-3</td>
+                                                <td></td>
+                                        </tr>
+                                        <tr class="tr"  onclick="music(this)">
+                                                <td>
+                                                        <div class="play ">
+                                                                <span>></span>
+                                                        </div>
+                                                        <div class="pause pp">
+                                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                        </div>
+                                                </td>
+                                                <td class="mu" >music-4</td>
+                                        
+                                        </tr>
+                                        <tr class="tr"  onclick="music(this)">
+                                                <td >
+                                                        <div class="play ">
+                                                                <span>></span>
+                                                              
+                                                        </div>
+                                                        <div class="pause pp">
+                                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                        </div>
+                                                </td>
+                                                <td class="mu" >music-5</td>
+                                                
+                                        </tr>
+                                        <tr class="tr"  onclick="music(this)">
+                                                <td >
+                                                        <div class="play ">
+                                                                <span>></span>
+                                                               
+                                                        </div>
+                                                        <div class="pause pp">
+                                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                        </div>
+                                                </td>
+                                                <td class="mu" >music-6</td>
+                                              
+                                        </tr>
+                                        <tr class="tr"  onclick="music(this)">
+                                                <td >
+                                                        <div class="play ">
+                                                                <span>></span>
+                                                               
+                                                        </div>
+                                                        <div class="pause pp">
+                                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                        </div>
+                                                </td>
+                                                <td class="mu" >music-7</td>
+                                                
+                                        </tr>
+                                        <tr class="tr"  onclick="music(this)">
+                                                <td >
+                                                        <div class="play ">
+                                                                <span>></span>
+                                                               
+                                                        </div>
+                                                        <div class="pause pp">
+                                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                        </div>
+                                                </td>
+                                                <td class="mu" >music-8</td>
+                                                
+                                        </tr>
+                                        <tr class="tr"  onclick="music(this)">
+                                                <td >
+                                                        <div class="play ">
+                                                                <span>></span>
+                                                                
+                                                        </div>
+                                                        <div class="pause pp">
+                                                                <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                        </div>
+                                                </td>
+                                                <td class="mu" >music-9</td>
+                                                
+                                        </tr>
+                                </table>
+                                </div>  
+                </div>
+                
+                 <div class="pro">
+                <div class="ch_d" >
+                        <div class="night" onmouseover="cou()" >
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                                <div class="shooting_star"></div>
+                             </div>
+                
+                        <div class="ch_img " onmouseover="ch_h()" onmouseleave="cou()">
+                                
+                                
+                                <img src="img/card.jpg" class="ch_im " alt="">
+                                <div class="ch_ic">
+                                        <i class="fa-solid fa-heart hrtt" id="hrt2" onclick="hrt(this)"></i>
+                                        <div class="ch_pp" onclick="music_ch()">
+                                                <div class=" play_ch ">
+                                                        <span>></span>
+                                                       
+                                                </div>
+                                                <div class=" pause_ch  pp">
+                                                        <span style="margin-left: 3px;margin-bottom: 2px; font-size:15px; letter-spacing: 3px;">||</span>
+                                                </div>
+                                        </div>
+                                        <i class="fa-sharp fa-solid solid fa-circle-down" id="down2" onclick="down('song/uyire.mp3',0)"></i>
+                                </div>
+                                       <div class="per_con" >
+                                                
+                                        <div class="sng_pr" ontouchstart="handleTouch(event)" >
+
+                                                <div class="pr_per">
+                                                      
+                                                </div>
+
+                                        
+                                </div>
+                                       </div>
+                                
+                                       <!-- // audio element..... -->
+                                       
+                                             
+                               
+
+                                <div class="cub c1" onmouseover="cubc()" onmouseleave="cub_o()" style="border-top: 1px solid; border-left: 1px solid;">
+                                
+                                        <img src="img/pic1.jpg" class="inst"   alt="" >
+                                </div>
+                                <div class="cub c2" onmouseover="cubc()" onmouseleave="cub_o()" style="border-top: 1px solid; border-right:1px solid ;">
+                                        <img src="img/pic2.jpg" class="inst"   alt="">
+                                </div>
+                                <div class="cub c3" onmouseover="cubc()" onmouseleave="cub_o()" style="border-bottom: 1px solid; border-left: 1px solid ;">
+                                        <img src="img/pic3.jpg"class="inst"    alt="">
+                                </div>
+                                <div class="cub c4" onmouseover="cubc()" onmouseleave="cub_o()"  style="border-right: 1px solid; border-right:1px solid ;">
+                                        <img src="img/pic4.jpg" class="inst"   alt="">
+                                </div>
+                        </div>
+
+                        <p class="ch_h">Hover it.....</p>
+                </div> 
+                 </div>
+                 <div class="pro">
+                        <div class="w66 www">
+
+                                
+                                <video  id="video_ltt" controls>
+                                        <source id="vid_ltt" src="img/key2.mp4" type="video/mp4">
+                                    </video>
+                        </div>
+                 </div>
+                 <div class="pro">
+                        <div class="w77 bbb" id="slider">
+                                <div class="ph ro1 last" id="z" >
+                                        <img  class="t_img" src="img/t5.jpg" alt="">
+                                </div>
+                                <div class="ph  ro2" >
+                                        <img class="t_img" src="img/t1.jpg" alt="">
+                                </div>
+                                <div class="ph ro3" >
+                                        <img class="t_img" src="img/t1.jpg" alt="">
+                                </div>
+                                <div class="ph  ro4" >
+                                        <img class="t_img" src="img/t3.jpg" alt="">
+                                </div>
+                                <div class="ph ro5" >
+                                        <img class="t_img" src="img/t4.jpg" alt="">
+                                </div>
+                                <div class="ph  ro6">
+                                        <img class="t_img" src="img/t6.jpg" alt="">
+                                </div>
+                                <div class="ph ro7" >
+                                        <img class="t_img" src="img/t7.jpg" alt="">
+                                </div>
+                                <div class="ph  ro8 first" id="sev">
+                                        <img class="t_img" src="img/t2.jpg" alt="">
+                                </div>
+
+                        </div>
+                                <div class="mv_sl">
+                                        <button class="mv" id="pre" onclick="pree()">pre</button>
+                                        <button class="mv" id="nxt" onclick="nxtt()">next</button>
+                                </div>
+                               
+                        
+                </div>
+                 <div class="pro">
+                        <div class="w00 bbb">
+                              
+                                <video  id="video_lt" controls>
+                                        <source id="vid_lt" src="img/v3.mp4" type="video/mp4">
+                                    </video>
+                        </div>
+                        
+                 </div>
+                 <div class="pro ">
+                        <div class="w99 bbb" >
+                                
+                        </div>
+                 </div>
+                 <div class="pro">
+                        <div class="w8 bbb">
+                                <div class="ct_con">
+                                        <div class="ct_cou fl">
+                                                <p class="ct_nm">5</p>
+                                        </div>
+                                </div>
+                                <video  id="video_lst" controls>
+                                        <source id="vid_lst" src="img/lst.mp4" type="video/mp4">
+                                    </video>
+                        </div>
+                 </div>
+                <button id="cl" onclick="cl()">CLOSE</button>
+        </div>
+  </div>
+
+ 
+  <script src="pre.js"></script>
+</body>
+</html>
+
+
+
+
