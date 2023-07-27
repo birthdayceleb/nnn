@@ -45,12 +45,12 @@ function stop(){
     }
     
     audio_tr.pause()  ;
-    video.pause();
+    // video.pause();
     bl.pause();
-    video_2.pause();
+    // video_2.pause();
     // fi_v.pause()
     audio_ch.pause();
-    video_lst.pause()
+    // video_lst.pause()
 
     w33.innerHTML=te_w33
 }
@@ -786,26 +786,24 @@ function handleTouch(event) {
 
 //  ////// last pre keyyyyyyyyyyyyyyyyyyyyyyyy............................................
 let w6=document.querySelector(".w6")
+let a_2=document.querySelector(".a_lnk2")
 var video = document.getElementById("video_lt");
 w6.addEventListener("click", function() {
-    // alert("sa")
- 
-    video.play();
+    a_2.click();
 });
 
 let w66=document.querySelector(".w5")
+let a_3=document.querySelector(".a_lnk3")
 var video_2 = document.getElementById("video_ltt");
 w66.addEventListener("click", function() {
-    // alert("sa")
- 
-    video_2.play();
+   a_3.click();
 });
 
 
 ///// last key.......
 let w7=document.querySelector(".w7");
 let ct_con=document.querySelector(".ct_con")
-let video_lst = document.getElementById("video_lst");
+let vid_ = document.querySelector(".a_lnk");
 let ct=4;
 let bl=new Audio("song/bl.mp3")
 w7.addEventListener("click", function() {
@@ -829,7 +827,7 @@ w7.addEventListener("click", function() {
     
 
 });
-
+console.log(vid_)
 
 /////function celeb.....,.
 let can_va=document.querySelector(".confetti")
@@ -848,8 +846,8 @@ function celeb() {
     },1100)
 
     let pop_v=setTimeout(()=>{
-        video_lst.play()
-        
+        vid_.click();
+        console.log("sak")
         clearTimeout(pop_v)
     },3500)
 
@@ -937,8 +935,9 @@ let vd=['img/vd1.mp4','img/vd2.mp4','img/vd3.mp4']
 let w33=document.querySelector(".w33")
 var te_w33=w33.innerHTML;
 function vid(n){
-    w33.innerHTML=`<video class="fi_v" autoplay controls>
-                         <source  src="${vd[n-1]}" type="video/mp4">
-                </video>`
+    // window.open("")
     
 }
+
+
+ 
